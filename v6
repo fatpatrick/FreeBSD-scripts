@@ -1,0 +1,31 @@
+ifconfig gif0 create
+ifconfig gif0 tunnel 66.85.142.252 216.218.224.42
+ifconfig gif0 inet6 2001:470:1f0e:1285::2 2001:470:1f0e:1285::1 prefixlen 128
+route -n add -inet6 default 2001:470:1f0e:1285::1
+ifconfig gif0 up
+ifconfig gif0 inet6 add 2001:470:1f0f:1285::3
+ifconfig gif0 inet6 add 2001:470:1f0f:1285::4
+ifconfig gif0 inet6 add 2001:470:1f0f:1285::5
+ifconfig gif0 inet6 add 2001:470:1f0f:1285::fade:d
+ifconfig gif0 inet6 add 2001:470:1f0f:1285::dead:fed
+ifconfig gif0 inet6 add 2001:470:1f0f:1285::dead:dead
+ifconfig gif0 inet6 add 2001:470:1f0f:1285::dead:fade
+ifconfig gif0 inet6 add 2001:470:1f0f:1285::babe
+ifconfig gif0 inet6 add 2001:470:1f0f:1285::dead:babe
+ifconfig gif0 inet6 add 2001:470:1f0f:1285::dead:dea
+ifconfig gif0 inet6 add 2001:470:1f0f:1285::dead:b
+ifconfig gif0 inet6 add 2001:470:1f0f:1285::dead:5
+ifconfig gif0 inet6 add 2001:470:1f0f:1285::de:face
+ifconfig gif0 inet6 add 2001:470:1f0f:1285::dead:face 
+ifconfig gif0 inet6 add 2001:470:1f0f:1285::face
+ifconfig gif0 inet6 add 2001:470:1f0f:1285::face:babe
+ifconfig gif0 inet6 add 2001:470:1f0f:1285::de:face:d
+ifconfig gif0 inet6 add 2001:470:1f0f:1285::6
+ifconfig gif0 inet6 add 2001:470:1f0f:1285::420
+ifconfig gif0 inet6 add 2001:470:1f0f:1285::74
+ifconfig gif0 inet6 add 2001:470:1f0f:1285::187
+ifconfig gif0 inet6 add 2001:470:1f0f:1285::666:999
+ifconfig gif0 inet6 add 2001:470:1f0f:1285::80
+ifconfig gif0 inet6 add 2001:470:1f0f:1285::dd05
+ifconfig gif0 inet6 add 2001:470:1f0f:1285::face:d
+ifconfig gif0 inet6 add 2001:470:1f0f:1285::69

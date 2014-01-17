@@ -1,0 +1,19 @@
+#!/usr/local/bin/bash
+
+col1="\x1b[0;31;40m"
+col2="\x1b[0;32;40m"
+col3="\x1b[0;33;40m"
+col4="\x1b[0;36;40m"
+col5="\x1b[0;35;40m"
+
+# edit this line
+cachefile='/usr/local/share/cache'
+
+printf "$col1 Hostnames for $HOSTNAME:\n"
+
+while read ip host
+do
+   ((++i == 1))   && max="$ip" && continue
+   [[ -z $host ]] && host="$col5 reverse lookup failed ._."
+   printf "$col2%-*s $col3= $col4$host\n" "$max" "$ip"
+done < "$cachefile"
